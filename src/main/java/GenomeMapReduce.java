@@ -52,6 +52,7 @@ public final class GenomeMapReduce extends Configured implements Tool {
         job.setOutputKeyClass(IntWritable.class);
         job.setOutputValueClass(IntWritable.class);
         JobClient.runJob(job);
+
         return 0;
     }
 }
